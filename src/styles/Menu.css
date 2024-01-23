@@ -1,0 +1,76 @@
+
+.animated-text-item {
+    font-size: 24px;
+    border: 2px solid rgb(226, 160, 38);
+    background: orange;
+    border-radius: 9px;
+    width: auto;
+    color: #0d0101;
+     animation: textAnimation 2s infinite; 
+  }
+  .animated-text-item:hover{
+    background: green;
+  }
+  
+  @keyframes textAnimation {
+    0%, 100% {
+      transform: translateY(0);
+      text-shadow: none;
+     
+    }
+    50% {
+      transform: translateY(-20px);
+      text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    }
+  }
+  /*  */
+  
+  .app-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .order-button {
+    
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .popup-content {
+    text-align: center;
+  }
+  
+  .close-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .close-button:hover {
+    background: #0056b3;
+  }
+  

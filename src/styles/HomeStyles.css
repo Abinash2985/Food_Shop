@@ -1,0 +1,139 @@
+
+.home {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headerContainer {
+  width: auto;
+  margin-left: 30px;
+}
+
+.home .headerContainer h1 {
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 70px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+
+.home .headerContainer p {
+  margin-top: 15px;
+  padding: 0;
+  font-size: 40px;
+  font-weight: lighter;
+  color: black;
+}
+
+.headerContainer button {
+  background-color: #121619;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+  width: 180px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.headerContainer button:hover {
+  background-color: #07090a;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+/* mobile view  */
+
+@media only screen and (max-width: 600px) {
+  .home {
+    justify-content: center;
+    align-items: center;
+  }
+  .headerContainer {
+    margin-left: 0;
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-image: url(../images/vegthali.jpg);
+  }
+  .home .headerContainer h1 {
+    font-size: 40px;
+    height: 60px;
+    margin: 30px 0px;
+    color: white;
+  }
+  .home .headerContainer p {
+    font-size: 30px;
+    color: white;
+  }
+  .headerContainer button {
+    background-color: white;
+    color: #121619;
+    margin-bottom: 30px;
+  }
+}
+/*  */
+.animate-charcter
+{
+  
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #3b0be6 0%,
+    #2fafda 29%,
+    #5216eb 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      
+      
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+
+  }
+}
+/*  */
+
+.animated-text {
+  font-size: 24px;
+  color: #fff;
+  animation: textAnimation 1s infinite;
+}
+
+@keyframes textAnimation {
+  0%, 100% {
+    transform: translateY(0);
+    text-shadow: none;
+   
+  }
+  50% {
+    transform: translateY(-20px);
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/*  */
